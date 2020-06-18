@@ -5,10 +5,10 @@ services:
         volumes:
             - ./../mysql:/var/lib/mysql
         environment:
-            - MYSQL_DATABASE: ddmenv
-            - MYSQL_USER: root
-            - MYSQL_PASSWORD: ash1201033m
-            - MYSQL_ROOT_PASSWORD: ash1201033m
+            - MYSQL_DATABASE=ddmenv
+            - MYSQL_USER=root
+            - MYSQL_PASSWORD=ash1201033m
+            - MYSQL_ROOT_PASSWORD=ash1201033m
         ports:
             - 3306:3306    
     web:
